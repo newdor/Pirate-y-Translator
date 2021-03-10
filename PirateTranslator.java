@@ -44,7 +44,10 @@ public class PirateTranslator {
 		}
 	}
 
-	public void getWordMeaning(String word){
-		System.out.println(dictionary.get(word));
+	public String getWordMeaning(String word){
+		if (!dictionary.containsKey(word)){
+			return null;
+		}
+		return dictionary.get(word);
 	}
 }
