@@ -15,9 +15,9 @@ public class PirateTranslatorMain
 {
 	public static void main(String[] args)
 	{
-		pirateTranslator translator = new pirateTranslator();
-		
-		translator.runInteraction();
+		PirateTranslator translator = new PirateTranslator();
+		translator.printDictionary();
+
 	}
 		
 	
