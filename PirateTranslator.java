@@ -43,4 +43,8 @@ public class PirateTranslator {
 			System.out.println(word+" means "+dictionary.get(word));
 		}
 	}
+
+	public void getWordMeaning(String word){
+		System.out.println(dictionary.get(word));
+	}
 }
