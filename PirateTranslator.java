@@ -1,4 +1,3 @@
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.HashMap;
@@ -13,6 +12,7 @@ public class PirateTranslator {
 		loadRules();
 	}
 
+	// load all words and their meanings into the dictionary
 	public void loadRules() {
 		//make sure the file can be opened
 		try {
@@ -22,32 +22,32 @@ public class PirateTranslator {
 
 			num = scan.nextInt();
 			scan.nextLine();
-
-
 			for (int i = 0; i < num; i++) {
 				String line = scan.nextLine();
 				String[] sl = line.split(" ; ");
 				dictionary.put(sl[0],sl[1]);
 			}
 
-		} catch (FileNotFoundException e) {
+		}
+		catch (FileNotFoundException e) {
 			System.out.println("File not found.");
 			return;
 		}
-
-		System.out.println(dictionary);
 	}
 
+	// display dictionary
 	public void printDictionary(){
 		for (String word: dictionary.keySet()){
-			System.out.println(word+" means "+dictionary.get(word));
+			System.out.println(word);
 		}
 	}
 
+	// get the word meaning
 	public String getWordMeaning(String word){
 		if (!dictionary.containsKey(word)){
 			return null;
 		}
 		return dictionary.get(word);
 	}
+
 }
