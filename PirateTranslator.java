@@ -1,4 +1,3 @@
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.HashMap;
@@ -13,6 +12,7 @@ public class PirateTranslator {
 		loadRules();
 	}
 
+	// load all words and their meanings into the dictionary
 	public void loadRules() {
 		// make sure the file can be opened
 		try {
@@ -30,7 +30,8 @@ public class PirateTranslator {
 			}
 			scan.close();// suggested by Eclipse
 
-		} catch (FileNotFoundException e) {
+		}
+		catch (FileNotFoundException e) {
 			System.out.println("File not found.");
 			return;
 		}
@@ -38,14 +39,16 @@ public class PirateTranslator {
 		// System.out.println(dictionary);
 	}
 
-	public void printDictionary() {
-		for (String word : dictionary.keySet()) {
-			System.out.println(word + " means " + dictionary.get(word));
+	// display dictionary
+	public void printDictionary(){
+		for (String word: dictionary.keySet()){
+			System.out.println(word);
 		}
 	}
 
-	public String getWordMeaning(String word) {
-		if (!dictionary.containsKey(word)) {
+	// get the word meaning
+	public String getWordMeaning(String word){
+		if (!dictionary.containsKey(word)){
 			return null;
 		}
 		return dictionary.get(word);
