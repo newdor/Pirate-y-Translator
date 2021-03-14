@@ -13,13 +13,7 @@ public class PirateTranslatorMain {
 		while (option!=2){
 			System.out.println("enter a word");
 			word = scanner.nextLine();
-			while (translator.getWordMeaning(word) == null){
-				System.out.println("here are valid words: ");
-				translator.printDictionary();
-				System.out.println("Please enter a valid word: ");
-				word = scanner.nextLine();
-			}
-			System.out.println(word+" means "+translator.getWordMeaning(word));
+			System.out.println(translator.getTranslatedText(word));
 			System.out.println();
 			printOptions();
 			System.out.print("enter an option: ");
