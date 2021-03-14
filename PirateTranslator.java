@@ -20,14 +20,12 @@ public class PirateTranslator {
 
 			Scanner scan = new Scanner(file);
 
-			num = scan.nextInt();
-			scan.nextLine();
-
-			for (int i = 0; i < num; i++) {
+			while (scan.hasNextLine()){
 				String line = scan.nextLine();
 				String[] sl = line.split(" ; ");
 				dictionary.put(sl[0], sl[1]);
 			}
+
 			scan.close();// suggested by Eclipse
 
 		}
@@ -37,6 +35,15 @@ public class PirateTranslator {
 		}
 
 		// System.out.println(dictionary);
+	}
+
+	public String getTranslatedText(String words){
+		String [] wordArr = words.split(" ");
+		String res = "";
+		for (int i = 0; i<wordArr.length;i++){
+			res+=getWordMeaning(wordArr[i])+" ";
+		}
+		return res.strip();
 	}
 
 	// display dictionary
@@ -49,7 +56,7 @@ public class PirateTranslator {
 	// get the word meaning
 	public String getWordMeaning(String word){
 		if (!dictionary.containsKey(word)){
-			return null;
+			return word;
 		}
 		return dictionary.get(word);
 	}
