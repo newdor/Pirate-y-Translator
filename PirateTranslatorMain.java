@@ -11,7 +11,7 @@ public class PirateTranslatorMain {
 		scanner.nextLine();
 		// start the game loop
 		while (option!=2){
-			System.out.println("enter a word");
+			System.out.println("enter your text: ");
 			word = scanner.nextLine();
 			System.out.println(translator.getTranslatedText(word));
 			System.out.println();
