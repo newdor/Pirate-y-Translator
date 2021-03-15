@@ -2,7 +2,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class TextTranslatorMain {
-	public static void main(String[] args) {
+	public static void alternateMain(String[] args) {
 //add the whole text input into a String variable
 		Scanner keyboard = new Scanner(System.in);
 		String englishText = keyboard.next();
