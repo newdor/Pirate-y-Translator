@@ -24,8 +24,10 @@ public class PirateTranslatorMain {
 
 	// display options to user
 	private static void printOptions(){
-		System.out.print("1./user can enter a new word\n" +
-						 "2./End program\n");
+		System.out.print("""
+				1./user can enter a new word
+				2./End program
+				""");
 	}
 
 }
