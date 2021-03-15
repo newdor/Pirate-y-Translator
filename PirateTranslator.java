@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class PirateTranslator {
-	private int num;
 	private HashMap<String, String> dictionary;
 
 	public PirateTranslator() {
