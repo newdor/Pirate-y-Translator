@@ -18,3 +18,9 @@ This program receives a text input in proper English and converts it to pirate s
  
 ## How you can run the code:
  -Use git(https://git-scm.com/) to create a clone on your computer.
+ 
+## Contributors:
+ - nguyen123-it
+ - newdor
+ - slg2522
+ - ScrappyDoo667
