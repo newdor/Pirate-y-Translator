@@ -13,8 +13,8 @@ This program receives a text input in proper English and converts it to pirate s
  - enter as many words/paragraphs as he/she wants until he/she hits 2.
 
 ## Technologies:
- -Java JDK 14.
- -Standard Java libraries. 
+ - Java JDK 14.
+ - Standard Java libraries. 
  
 ## How you can run the code:
  -Use git(https://git-scm.com/) to create a clone on your computer.
