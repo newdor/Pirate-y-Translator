@@ -32,7 +32,7 @@ public class PirateTranslator {
 				dictionary.put(sl[0], sl[1]);
 			}
 
-			//closes the scanner
+			//closes the Scanner
 			scan.close();
 
 		}
