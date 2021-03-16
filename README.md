@@ -17,4 +17,4 @@ This program receives a text input in proper English and converts it to pirate s
  -Standard Java libraries. 
  
 ## How you can run the code:
- -Use gi(https://git-scm.com/) to create a clone on your computer.
+ -Use git(https://git-scm.com/) to create a clone on your computer.
