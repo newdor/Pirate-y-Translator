@@ -13,18 +13,18 @@ public class PirateTranslatorMain {
 		printOptions();
 		
 		//takes a single word input
-		System.out.print("enter an option: ");
+		System.out.print("Enter an option: ");
 		int option = scanner.nextInt();
 		scanner.nextLine();
 		
 		// start the game loop
 		while (option!=2){
-			System.out.println("enter your text: ");
+			System.out.println("Enter your text: ");
 			word = scanner.nextLine();
 			System.out.println(translator.getTranslatedText(word));
 			System.out.println();
 			printOptions();
-			System.out.print("enter an option: ");
+			System.out.print("Enter an option: ");
 			option = scanner.nextInt();
 			scanner.nextLine();
 		}
@@ -33,7 +33,7 @@ public class PirateTranslatorMain {
 	// display options to user
 	private static void printOptions(){
 		System.out.print("""
-				1./user can enter a new word
+				1./Enter a new word:
 				2./End program
 				""");
 	}
