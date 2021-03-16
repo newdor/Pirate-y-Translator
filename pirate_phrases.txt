@@ -1,4 +1,10 @@
 address ; port o' call
+Sink me ; an exclamation of great surprise
+Shiver me timbers ; an expression used to show shock or disbelief
+Savvy ; a question that means Do you understand
+Avast ye ; Stop you pay attention
+blimey ; something said when one is in a state of surprise
+heave ho ; instruction to put some strength into whatever one is doing
 admin ; helm
 am ; be
 an ; a
