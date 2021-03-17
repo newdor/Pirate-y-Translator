@@ -75,8 +75,8 @@ public class PirateTranslator {
 		return dictionary.get(word);
 	}
 
-//for captainHook translator
+/**for captainHook translator
 	public HashMap<String, String> getDictionary() {
 		return dictionary;
-	}
+	}**/
 }
