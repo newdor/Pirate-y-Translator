@@ -10,10 +10,9 @@ public class PirateTranslatorMain {
 		PirateTranslator translator = new PirateTranslator();
 		Scanner scanner = new Scanner(System.in);
 		String word = "";
-		printOptions();
 		
 		//takes a single word input
-		System.out.print("Enter an option: ");
+		printOptions();
 		int option = scanner.nextInt();
 		scanner.nextLine();
 		
@@ -21,6 +20,7 @@ public class PirateTranslatorMain {
 		while (option!=2){
 			System.out.println("Enter your text: ");
 			word = scanner.nextLine();
+			word = word.toLowerCase();
 			System.out.println(translator.getTranslatedText(word));
 			System.out.println();
 			printOptions();
@@ -32,10 +32,7 @@ public class PirateTranslatorMain {
 
 	// display options to user
 	private static void printOptions(){
-		System.out.print("""
-				1./Enter a new word:
-				2./End program
-				""");
+		System.out.print("Enter an option\n1: Enter your text\n2: End program\n");
 	}
 
 }
